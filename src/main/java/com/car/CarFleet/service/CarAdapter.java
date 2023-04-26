@@ -9,12 +9,12 @@ public class CarAdapter {
 
     public static Car getCarFromCarDTO(CarDTO carDTO){
         return new Car(carDTO.getLicensePlate(), carDTO.getType(), carDTO.getBrand(), 
-        carDTO.getPriceperDay(), carDTO.isAvailable());
+        carDTO.getprice(), carDTO.isAvailable());
     }
     
     public static CarDTO getCarDTOFromCar(Car car){
         return new CarDTO(car.getLicensePlate(), car.getType(), car.getBrand(), 
-        car.getPriceperDay(), car.isAvailable());
+        car.getprice(), car.isAvailable());
     }
 
     public static List<CarDTO> getCarDTOListFromCarList(List<Car> carList){
@@ -22,7 +22,7 @@ public class CarAdapter {
 
         for (Car car : carList) {
             carDTOs.add(new CarDTO(car.getLicensePlate(), car.getType(), car.getBrand(), 
-            car.getPriceperDay(), car.isAvailable()));
+            car.getprice(), car.isAvailable()));
         }
 
         return carDTOs;
