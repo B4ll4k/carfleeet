@@ -9,7 +9,7 @@ public class Car {
     private  String licensePlate;
     private String type;
     private String brand;
-    private double priceperDay;
+    private double pricePerDay;
     private boolean isAvailable;
 
     
@@ -33,7 +33,7 @@ public class Car {
 
 
     public double getPriceperDay() {
-        return priceperDay;
+        return pricePerDay;
     }
 
 
@@ -48,7 +48,7 @@ public class Car {
         this.licensePlate = licensePlate;
         this.type = type;
         this.brand = brand;
-        this.priceperDay = priceperDay;
+        this.pricePerDay = priceperDay;
         this.isAvailable = isAvailable;
     }
     
